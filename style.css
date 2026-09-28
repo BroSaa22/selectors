@@ -1,0 +1,109 @@
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Demonstration</h1>
+    <section>
+        <h2>hover</h2>
+        <button class="btn-hover">Наведи</button>
+        <a href="#" class="link-hover">Ссылка hover</a>
+    
+    </section>
+
+    <section>
+        <h2>active</h2>
+        <button class="btn-active">Нажми</button>
+    </section>
+</body>
+</html> */
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+}
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+section {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background: #d7d7d7;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #3498db;
+    margin-top: 0;
+}
+
+.btn-hover {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.link-hover {
+    color: #3498db;
+    margin-left: 15px;
+
+}
+
+
+.btn-hover:hover {
+    background-color: #e74c3c;
+    transform: scale(1.1);
+}
+
+.link-hover:hover {
+    color: #e74c3c;
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+    gap: 15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+
+}
+
+.section-two .col h3 {
+    color: aqua;
+}
+
+.section-two .col + .col {
+    background: #d6eaf8;
+}
+
+.section-two .col > p {
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.section-two .col b {
+    color: #e74c3c;
+}
+
+.section-two .col code {
+    background: #fff;
+    padding: 1px 5px;
+    font-size: 13px;
+}
+

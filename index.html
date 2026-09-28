@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Demonstration</h1>
+    <section class="section-two">
+        <h2>Section 1 - two colums</h2>
+        <div class="row">
+            <div class="col">
+                <h3>Column 1</h3>
+  <p>Демонстрируется <b>сочетание селекторов</b>:
+                   <code>.section-two .col h3</code> — вложенный селектор.</p>
+                <p>Соседний комбинатор <code>+</code> и дочерний <code>&gt;</code> тоже работают.</p>            </div>
+        </div>
+        <div class="col">
+            <h3>Column 2</h3>
+            <p>Вторая колонка.
+                <code>.col + .col</code> - комбинатор соседнего элемента. </p>
+                <p>При наведении колонка "всплывает"</p>
+        </div>
+        
+    </section>
+    <section>
+        <h2>Hover:</h2>
+        <button class="btn-hover">Check</button>
+        <a href="#" class="link-hover">Link hover</a>
+    </section>  
+</body>
+</html>
